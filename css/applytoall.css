@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'mcten';
+  src: url('minecraftten.ttf');
+}
+@font-face {
+  font-family: 'sansbold';
+  src: url('sansbolds.ttf');
+}
+@font-face {
+  font-family: 'mcbold';
+  src: url('mcbold.ttf');
+}
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #0b1321;
+}
+    /*main title and description*/
+    #ten1 {
+      font-family: mcten, sans-serif;
+      
+      color: white;
+      font-size: 4.5rem;
+      display: Flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #description {
+      font-family: mcbold;
+      font-weight: 100;
+      color: white;
+      text-align: center;
+      font-size: 1.7rem;
+      opacity: 0.6;
+      transform: scale(1);
+      position: relative;
+      bottom: 20px;
+
+    }
+    /*Discover buttons*/
+    #butten1 {
+      font-family: mcten;
+      font-size: 2em;
+      color: white;
+      
+    }
+    #dark {
+    filter:brightness(50%);
+    }
+    #small {
+      font-size: 1.5rem;
+      opacity: 0.5;
+    }
+    #absolute {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1rem;
+      opacity: 0.3;
+    } 
+    /*copyright*/
+    .copyright p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      flex-direction: column;
+      font-family: sans-serif;
+      font-weight: 800;
+      opacity: 0.5;
+    }
+    .copyright {
+      position: relative;
+      border-top-style: solid;
+      border-top-color: #141e30;
+    }

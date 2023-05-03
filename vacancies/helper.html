@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/applytoall.css">
+  <link rel="stylesheet" href="helper.css" />
+  <title>Helper Applications</title>
+</head>
+<body>
+<div class=centered>
+  <div class=warn>
+     <p id=symbol>!</p>
+     <p id=warning>This form will be submitted to <b>Solar Network</b>.<br> Do not share passwords or other sensitive information for your safety.</p>
+  </div>
+  <div class=error>
+    <p id=symbolerror>X</p> 
+     <p id=warning>Please fill out every question.</p>
+  </div>
+  <div class=success>
+    <p id=symbolsuccess>✓</p> 
+     <p id=warning>Your application has been submitted, please <br>be patient and wait for our team to review your application. This might take up to 7 days, If your application hasn't been checked, Please open a ticket.</p>
+  </div>
+</div>
+  <div class=application>
+    <p id=question>1. Your Email</p>
+    <input id=email type=email placeholder=example@gmail.com required />
+    <p id=example>Enter your email so we'll be able to easily contact you</p>
+    <p id=question>2. What's your discord username?</p>
+    <input type=text id=discordname placeholder=name#tags pattern="\w+#\d+" required />
+    <p id=example>Example: Goku3508 iOS#1511</p>
+    <p id=question>3. What's your discord user ID?</p>
+    <input type=number id=ID placeholder=ID required />
+    <p id=example>Example: 2923847743853953</p>
+    <p id=question>4. What's your gender?</p>
+    <select id=gender required>
+      <option value="">Select your gender</option>
+      <option value=Male>Male</option>
+      <option value=Female>Female</option>
+    </select>
+    <p id=question>5. What country do you live in?</p>
+    <input id="nation" type=text placeholder="The country you currently live in" required />
+    <p id=example>The country you're living on at the time you're applying</p>
+    <p id=question>6. What country are you from? </p>
+    <input id="countryin" type=text placeholder="Where you came from" required/>
+    <p id=example>Your nationality</p>
+    <p id=question>7. What timezone do you live in?</p>
+    <input id="timezone" type=text placeholder="Your timezone" required />
+    <p id=example>The timzone that you live in</p>
+    <p id=question>8. How old are you?</p>
+    <input id="age" type=number min=13 placeholder="Your age" required />
+    <p id=example>You must be 13 years old to apply for this position</p>
+    <p id=question>9. What's your level in the discord server?</p>
+    <input id="level" min=10 type=text placeholder="Your Arcane level, Unsure? Do /level in #bot-commands" required />
+    <p id=example>You must have level 10 to apply for this position.</p>
+    <p id=question>10. How long are you online per day?</p>
+    <input id="online" type=text placeholder="For example: I am online for 6 hours" required />
+    <p id=example>Your must moderate 1 hour per day unless you inform us.</p>
+    <p id=question>11. What is your current rank?</p>
+    <input id="rank" type=text placeholder="Please put your highest role/rank" required />
+    <p id=example>The highest rank you have, If "guest", then type "none"</p>
+     <p id=question>12. What languages are you fluent in?</p>
+    <input id="fluent" type=text placeholder="The languages you are fluent in" required />
+    <p id=example>Only add the languages you are fluent in and not the ones you're learning.</p>
+        <p id=question>13. Are you currently working for a minecraft server? </p>
+    <input id="workinother" type=text placeholder="Any MCPE servers" required />
+    <p id=example>If so, then are you a volunteer for that minecraft server?</p>
+        <p id=question>14. Please list every single punishment you ever got </p>
+    <input id="punishment" type=text placeholder="Your discord punishments" required />
+    <p id=example>DON'T JUST SAY "I don't know", Open a ticket and a staff member will check for you.</p>
+        <p id=question>15. Why should you be picked to become a helper? </p>
+    <input id="whypick" type=text placeholder="Why should we pick you?" required />
+    <p id=example>Please take your time with this question.</p>
+        <p id=question>16. What makes you stand out between other applicants? </p>
+    <input id="whythis" type=text placeholder="What makes you special between other applicants?" required />
+    <p id=example>You can talk about your talents</p>
+        <p id=question>17. What do you do outside of the internet? </p>
+    <input id="outside" type=text placeholder="Do you touch grass?" required />
+    <p id=example>You can tell us about what you do and what you lead in your school.</p>
+        <p id=question>18. Extra knowledge 1 </p>
+    <input id="scenario1" type=text placeholder="What would you do?" required />
+    <p id=example>You just punished a well-known player and everyone starts to ask you to remove their punishments or they will ask an admin to dismiss you.</p>
+            <p id=question>19. Extra knowledge 2 </p>
+    <input id="scenario2" type=text placeholder="What would you do?" required />
+    <p id=example>You're in a lobby and you get notified that 3 people are breaking the rules, The 1st one's hacking, 2nd is verball abusing people and 3rd is abusing bugs.</p>
+                <p id=question>20. Extra knowledge 3 </p>
+    <input id="scenario3" type=text placeholder="What would you do?" required />
+    <p id=example>A member adds you as a friend in discord and starts begging for ranks.</p>
+    <p id=question>Submittion </p>
+    <div class=checkbox>
+    <input id="yes" type=checkbox required/>
+      <p id=textnext>Do you believe that you will be dismissed at any time and not ask for your application status before 7 days has passed?</p>
+      
+    <!-- <p id=example></p> -->
+    </div>
+    <button onclick=validinput()>Submit</button>
+  </div>
+  <script src="../script.js">
+  </script>
+  <script src="helper.js">
+  </script>
+  <script src="../fetch.js">
+  </script>
+</body>
+
+</html>

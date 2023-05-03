@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/applytoall.css">
+  <link rel="stylesheet" href="css/discover.css">
+  <link rel="stylesheet" href="css/vacancies.css">
+  <link rel="stylesheet" href="css/UI.css">
+  <link rel="stylesheet" href="UI2.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <meta charset="UTF-8">
+  <div class=overlay></div>
+  <div class="solar">
+    <img class="logo" id="logobig" src="asset/solarlogo.png" width=235 height=100>
+  </div>
+</head>
+
+<body>
+  <div id="popup" class="ui">
+    <div class="vacanciespopup">
+      <div class="text">
+        <p class="title" id=titleofpopup>Staff Positions</p>
+        <a class="exit" id=back><button onclick="helpapp()" class=back>&lt;</button></a>
+        <a class="exit"><button onclick="closepopup()">X</button></a>
+      </div>
+      <iframe class=help src=https://solarnet.le-tran-minh-nh.repl.co/vacancies/helper.html></iframe>
+      <div class="jobs">
+        <div class="a">
+          <p id=context>Select an application</p>
+          <button class="helper" onclick=helpapp()><img src="hhammer.png" width=100>
+            <p>Helper</p><img src="arrow.png" width=60>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p id=ten1>Solar Network</p>
+  <p id=description>Solar Network is an upcoming Minecraft server<br>featuring various types of minigames, handle<br> by
+    a welcoming staff team.</p>
+  <div class=discover>
+    <div class=Disbuttons>
+      <a><button id=vacancies onclick=openpopup()>
+          <div class=center><img class=tags id=buttitle src='asset/tags.png' width=112 height=112>
+            <p id=butten1>Vacancies</p>
+          </div><img id=dark src="asset/lobby1.png" />
+        </button></a>
+      <a href="https://discord.com/invite/solarnet"><button id=discord onclick=opendiscord()>
+          <div class=center><img id=buttitle src="asset/msg.png" width=112 height=112>
+            <p id=butten1>Discord</p>
+          </div><img id=dark src="asset/lobby4.png">
+        </button></a>
+      <a href=https://youtu.be/dQw4w9WgXcQ><button id=Store>
+          <div class=center><img id=buttitle src="asset/store.png" width=112 height=112>
+            <p id=butten1>Store</p>
+          </div><img id=dark src="asset/lobby2.png">
+        </button></a>
+      <a href=https://youtu.be/dQw4w9WgXcQ><button id=Information>
+          <div class=center><img id=buttitle src="asset/book.png" width=112 height=112>
+            <p id=butten1>About</p>
+          </div><img id=dark src="asset/lobby3.png">
+        </button></a>
+    </div>
+  </div>
+
+  <div class=copyright>
+    <p>© 2023 Solar Network. All rights reserved</p>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
