@@ -17,17 +17,10 @@ header a {
   transition: 0.4s ease;
   padding-right: 55px;
 }
-.count {
-  width: 1300px;
-  height: 100%;
-  position: relative;
-  right: 27.5%;
-  
-}
 .📰 {
   width: 100%;
   height: 225px;
-  background-color: red;
+  background-color: transparent;
   overflow: hidden;
 }
 

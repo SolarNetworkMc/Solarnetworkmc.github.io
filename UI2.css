@@ -26,7 +26,13 @@
   z-index: 99;
   transition: 0.4s ease;
     border-radius: 20px;
-    
+  }
+  .count {
+  width: 1300px;
+  height: 100%;
+  position: relative;
+  right: 27.5%;
+  
   }
 }
 @media only screen and (orientation: landscape) {
@@ -76,4 +82,9 @@
     border-radius: 20px;
     
     }
+  .count {
+  width: 100%;
+  height: 100%;
+  right: 0%;
+  }
 }
