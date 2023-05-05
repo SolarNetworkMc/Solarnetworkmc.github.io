@@ -17,7 +17,11 @@ header a {
   transition: 0.4s ease;
   padding-right: 55px;
 }
-
+.count {
+  width: 100%;
+  
+  right: 50%;
+}
 /* #bar.active {
   background-color: rgba(20, 30, 48, 1);
 }

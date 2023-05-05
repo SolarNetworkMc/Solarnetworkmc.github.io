@@ -201,6 +201,10 @@ button {
  border-style: none;
  border: 3px solid #2f3d57;
 }
+#yes:checked ~ .checkbox {
+  background-color: rgba(0,255,0,0.14);
+  border: 3px solid rgba(0,255,0,0.8);
+}
 #nice {
   display: none;
 }
