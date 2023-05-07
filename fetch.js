@@ -20,7 +20,7 @@ function input() {
   scenario1 = document.getElementById('scenario1').value;
   scenario2 = document.getElementById('scenario2').value;
   scenario3 = document.getElementById('scenario3').value;
-  yes = document.getElementById('yes').value;
+  yes = document.getElementById('yes')
 }
 
 function submit() {
@@ -28,7 +28,7 @@ function submit() {
   const message = {
     username: 'Website Application',
     avatar_url:
-      'https://media.discordapp.net/attachments/1102491175312703529/1102492331694886932/SN.png',
+      'https://media.discordapp.net/attachments/1104765395329617940/1104765842853478544/SN.png',
     content:
       'An application has been submitted',
     allowed_mentions: {
@@ -38,11 +38,11 @@ function submit() {
       {
         color: 65280,
         author: {
-          name: 'Helper Application',
+          name: 'New Application!',
           icon_url: 'https://media.discordapp.net/attachments/1102493747461226516/1102494394847862895/hammer3.png',
         },
-        title: 'Discord username: ' + discordname,
-        description: 'User ID: ' + ID,
+        title: 'Discord username:' + discordname + "\nUser ID: " + ID,
+
         fields: [
           {
             name: 'Email',
@@ -53,43 +53,43 @@ function submit() {
             value: gender,
           },
           {
-            name: 'The country at the time',
+            name: 'What country do you live in?',
             value: nation,
           },
           {
-            name: 'Nationality',
+            name: 'What country are you from?',
             value: countryin,
           },
           {
-            name: 'Timezone',
+            name: 'What timezone do you live in?',
             value: timezone,
           },
           {
-            name: 'Age',
+            name: 'How old are you?',
             value: age,
           },
           {
-            name: 'Level',
+            name: 'Whats your level in the discord server?',
             value: level,
           },
           {
-            name: 'Online time',
+            name: 'How long are you online per day?',
             value: online,
           },
           {
-            name: 'Current rank',
+            name: 'Your current rank',
             value: rank,
           },
           {
-            name: 'Fluent languages',
+            name: 'What languages are you fluent in?',
             value: fluent,
           },
           {
-            name: 'Working on a different minecraft server',
+            name: 'Are you currently working in another Minecraft server?',
             value: workinother,
           },
           {
-            name: 'every single punishment',
+            name: 'Please list every single punishment you were issued',
             value: punishment,
           },
           {
@@ -118,15 +118,15 @@ function submit() {
           },
 
           {
-            name: 'Agree',
-            value: yes,
+            name: 'Agree?',
+            value: "User agreed",
           },
         ],
       },
     ],
   };
   try {
-    fetch('https://discord.com/api/webhooks/1102516333654052904/mtwv_uqNySuPgGEj0xqaPQ8wW3C_MUnK4ybBQOLAFFHcF8aNoiWzKuTzZS1nko0sKaOn', {
+    fetch('https://discord.com/api/webhooks/1104762018898124830/a_ey6J767ytii7ORJ6gQ28SeBTjYoMsH76WvfpLqCrjpR3d2ZOWrfkva8HmpdCk-T9Ng', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json'
@@ -159,5 +159,9 @@ document.getElementById('scenario3').value = "";
 document.getElementById('yes').value = "";
 document.querySelector('.success').classList.add('on');
 window.scrollTo(0, 0);
-
 }
+window.removeEventListener("beforeunload", preventUnload);
+/* if (email === "" || discordname === "" || ID === "" || gender === "" || nation === "" || countryin === "" || timezone === "" || age === "" || level === "" || online === "" || rank === "" || fluent === "" || workinother === "" || punishment === "" || whypick === "" || whythis === "" || outside === "" || scenario1 === "" || scenario2 === "" || scenario3 === "") {
+} else {
+window.addEventListener("beforeunload", function(event) { event.preventDefault() })
+} */

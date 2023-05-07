@@ -1,6 +1,6 @@
 @media only screen and (orientation: portrait) {
   .solar {
-  background: linear-gradient(to top, #0b1321 0%, #0000 0%), url('portrait1.png');
+  background: linear-gradient(to top, #0b1321 0%, #0000 0%), url('asset/portrait1.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 808px;
@@ -37,7 +37,7 @@
 }
 @media only screen and (orientation: landscape) {
   .solar {
-  background: linear-gradient(to top, #0b1321 0%, #0000 0%), url('solar1.png');
+  background: linear-gradient(to top, #0b1321 0%, #0000 0%), url('css/solar1.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 404px;
@@ -81,7 +81,7 @@
     transition: 0.4s ease;
     border-radius: 20px;
     
-    }
+  }
   .count {
   width: 100%;
   height: 100%;
