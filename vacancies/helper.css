@@ -169,12 +169,18 @@ color: rgba(255,255,255,0.8);
   border: 3px solid rgba(0,0,0,0.3);
   border-radius: 10px;
   align-items: center;
+  transition: 0.4s ease; 
 }
 .checkbox input {
   width: 80px;
   height: 80px;
   margin-left: 30px;
-  background: transparent;
+  opacity: 0.1;
+transition: 0.4s ease;
+}
+sus {
+  opacity: 0;
+  transition: 1s;
 }
 option {
   font-weight: 900;
@@ -202,13 +208,21 @@ button {
  border: 3px solid #2f3d57;
   transition: 0.4s ease;
 }
+button:hover {
+  background-color: #1b2840;
+ border: 3px solid #33425e;
+}
 .checkbox.in {
   background-color: rgba(255,0,0,0.05);
   border: 3px solid rgba(255,0,0,0.4);
 }
-.checkbox.va {
+.checkbox.checked {
   background-color: rgba(0,255,0,0.05);
   border: 3px solid rgba(0,255,0,0.4);
+}
+.checkbox.checked > input {
+  accent-color: rgba(0,255,0,0.05);
+  opacity: 1;
 }
 #nice {
   display: none;
@@ -216,4 +230,89 @@ button {
 body {
   transition: all 0.5s ease;
 }
-
+.clear {
+  display:flex; align-content:center; color:white; font-family:sans-serif; font-size:2rem; opacity:0.5; font-weight:700; transition: all 0.3s ease;
+}
+.clear:hover {
+ opacity: 0.7;
+}
+@media only screen and (orientation: landscape) {
+.application > input, select {
+  height: 70px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  text-indent: 20px;
+}
+input::placeholder {
+  font-weight: 450;
+  opacity: 0.5;
+  color: white;
+  font-size: 1.3rem;
+}
+.checkbox {
+  font-size: 1.6rem;
+justify-content: center;
+color: rgba(255,255,255,0.8);
+  font-family: sans-serif;
+  height: 100px;
+  width: 94%;
+  background-color: rgba(0,0,0,0.14);
+  display: flex;
+  flex-direction: warp;
+  gap: 20px;
+  border: 3px solid rgba(0,0,0,0.3);
+  border-radius: 10px;
+  align-items: center;
+}
+.checkbox input {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  background: transparent;
+}
+#question {
+  font-weight: 800;
+  font-size: 1.3rem;
+  opacity: 0.5;
+}
+#example {
+  opacity: 0.5;
+  font-size: 1.3rem;
+  }
+.warn, .success, .error {
+  font-size: 1.7rem;
+  width: 94%;
+  gap: 20px;
+  border-radius: 10px;
+}
+.success {
+  height: 165px;
+}
+.warn {
+  height: 130px;
+}
+.error {
+  height: 80px;
+}
+#warning {
+  line-height: 30px;
+  }
+#symbol {
+  font-size: 1.6rem;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+}
+#symbolerror {
+font-size: 1.6rem;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+}
+#symbolsuccess {
+font-size: 1.6rem;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+}
+}

@@ -27,11 +27,11 @@
     <input id=email type=email placeholder=example@gmail.com required />
     <p id=example>Enter your email so we'll be able to easily contact you</p>
     <p id=question>2. What's your discord username?</p>
-    <input type=text id=discordname placeholder=name#tags pattern="\w+#\d+" required />
-    <p id=example>Example: Goku3508 iOS#1511</p>
+    <input type=text id=discordname placeholder=name#tags pattern="^\s*\w+(?:\s+\w+)*\s*#\d{4}$" required />
+    <p id=example>Example: Goku3508 iOS#1511 <sus>🤨</sus></p>
     <p id=question>3. What's your discord user ID?</p>
     <input type=number id=ID placeholder=ID required />
-    <p id=example>Example: 2923847743853953</p>
+    <p id=example>Example: 2923847743853953 this will help us to identify you if your username failed</p>
     <p id=question>4. What's your gender?</p>
     <select id=gender required>
       <option value="">Select your gender</option>
@@ -46,7 +46,7 @@
     <p id=example>Your nationality</p>
     <p id=question>7. What timezone do you live in?</p>
     <input id="timezone" type=text placeholder="Your timezone" required />
-    <p id=example>The timzone that you live in</p>
+    <p id=example>The timezone that you live in</p>
     <p id=question>8. How old are you?</p>
     <input id="age" type=number min=13 placeholder="Your age" required />
     <p id=example>You must be 13 years old to apply for this position</p>
@@ -87,11 +87,12 @@
     <input id="scenario3" type=text placeholder="What would you do?" required />
     <p id=example>A member adds you as a friend in discord and starts begging for ranks.</p>
     <p id=question>Submittion </p>
-    <div class=checkbox>
+    <div class=checkbox for="yes">
     <input id="yes" type=checkbox required/>
       <p id=textnext>Do you believe that you will be dismissed at any time and not ask for your application status before 7 days has passed?</p>
     <!-- <p id=example></p> -->
     </div>
+    <p class=clear onclick=confirmClear()>Clear all inputs</p>
     <button onclick=validinput()>Submit</button>
   </div>
   <script src="../script.js">

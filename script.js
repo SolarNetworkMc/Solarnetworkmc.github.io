@@ -6,6 +6,7 @@ let jobsitems = document.querySelector('.jobs');
 let back = document.querySelector('.back');
 let overlay = document.querySelector('.overlay');
 let titlepopup = document.getElementById('titleofpopup');
+let ui = document.querySelector('.ui');
 
 function openpopup() {
   popup.classList.toggle('active');
@@ -20,6 +21,8 @@ function closepopup() {
 };
 function helpapp() {
   help.classList.toggle('toggle');
+ui.classList.toggle('noscroll');
+ui.scrollTop = 0;
   jobsitems.classList.toggle('toggle');
   back.classList.toggle("toggle");
   if (titlepopup.innerText === "Staff Positions") {

@@ -136,6 +136,12 @@ function submit() {
   } catch (error) {
     console.error(error);
   }
+  cleardata();
+document.querySelector('.success').classList.add('on');
+window.scrollTo(0, 0);
+}
+function cleardata() {
+input();
 document.getElementById('email').value = "";
 document.getElementById('discordname').value = "";
 document.getElementById('gender').value = "";
@@ -157,11 +163,11 @@ document.getElementById('scenario1').value = "";
 document.getElementById('scenario2').value = "";
 document.getElementById('scenario3').value = "";
 document.getElementById('yes').value = "";
-document.querySelector('.success').classList.add('on');
-window.scrollTo(0, 0);
+  localStorage.clear();
 }
-window.removeEventListener("beforeunload", preventUnload);
-/* if (email === "" || discordname === "" || ID === "" || gender === "" || nation === "" || countryin === "" || timezone === "" || age === "" || level === "" || online === "" || rank === "" || fluent === "" || workinother === "" || punishment === "" || whypick === "" || whythis === "" || outside === "" || scenario1 === "" || scenario2 === "" || scenario3 === "") {
-} else {
-window.addEventListener("beforeunload", function(event) { event.preventDefault() })
-} */
+function confirmClear() {
+      var confirmed = confirm('Are you sure you want to clear your inputs🤨?');
+      if (confirmed) {
+        cleardata();
+      }
+}

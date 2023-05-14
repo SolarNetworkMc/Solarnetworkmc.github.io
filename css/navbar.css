@@ -10,7 +10,6 @@ header {
   transition: 0.6s ease;
   color: white;
 }
-
 header a { 
   visibility: hidden;
   opacity: 0;
@@ -23,6 +22,7 @@ header a {
   background-color: transparent;
   overflow: hidden;
 }
+
 
 /* #bar.active {
   background-color: rgba(20, 30, 48, 1);

@@ -87,4 +87,15 @@
   height: 100%;
   right: 0%;
   }
+  .text {
+    height: 80px;
+    font-size: 0.7rem;
+  }
+  .help {
+    height: 80%;
+  } 
+  .exit button {
+  font-size: 2rem;
+    }
+
 }
