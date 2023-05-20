@@ -1,0 +1,39 @@
+.games {
+ display:flex; 
+ justify-content: center; 
+ align-items: center;
+}
+.intro {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  color: white;
+}
+.modes div {
+  display:flex; justify-content: center; align-items: center; 
+  flex-direction: warp;
+}
+.modes {
+  width: 92%;
+}
+.modes div {
+  gap:50px;
+}
+.modes div > img {
+  width: 400px;
+  aspect-ratio: 1;
+  box-shadow: -10px 10px gray;
+  
+}
+#modename {
+  font-family: mcten;
+  font-size: 5rem;
+  
+}
+#modetext {
+  font-family: mcbold;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: auto;
+}
