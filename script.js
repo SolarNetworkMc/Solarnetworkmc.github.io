@@ -11,13 +11,26 @@ let ui = document.querySelector('.ui');
 function openpopup() {
   popup.classList.toggle('active');
   overlay.classList.toggle('active');
-
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 };
 
 function closepopup() {
   popup.classList.toggle('active');
   overlay.classList.toggle('active');
-
+  help.classList.remove('toggle');
+  ui.classList.remove('noscroll');
+  jobsitems.classList.remove('toggle');
+  back.classList.remove("toggle");
+  if (titlepopup.innerText === "Helper Application") {
+    titlepopup.innerText = "Staff Positions"
+}
+    window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 };
 function helpapp() {
   help.classList.toggle('toggle');
@@ -31,7 +44,6 @@ ui.scrollTop = 0;
     titlepopup.innerText = "Staff Positions"
   }
 }
-
 /* window.addEventListener("scroll", function() {
   bar.classList.toggle("active", window.scrollY > 0);
 logobig.classList.toggle("active", window.scrollY > 0);
