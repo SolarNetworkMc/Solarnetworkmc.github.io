@@ -136,7 +136,6 @@ function submit() {
   } catch (error) {
     console.error(error);
   }
-  cleardata();
 document.querySelector('.success').classList.add('on');
 window.scrollTo(0, 0);
 }
