@@ -2,7 +2,7 @@ html {
   overflow: auto;
 }
 .error {
-  color: rgba(255,255,255,0.8);;
+  color: rgba(255,255,255,0.8);
   font-family: sans-serif;
   font-size: 2.3rem;
   height: 110px;
@@ -20,6 +20,21 @@ html {
 .error.on {
   visibility: visible;
   position: static;
+}
+
+.warnred {
+  color: rgba(255,255,255,0.8);
+  font-family: sans-serif;
+  font-size: 2.3rem;
+  height: 130px;
+  width: 94%;
+  background-color: rgba(255,0,0,0.14);
+  display: flex;
+  flex-direction: warp;
+  align-items: center;
+  gap: 30px;
+  border: 3px solid rgba(255,0,0,0.8);
+  border-radius: 10px;
 }
 .success {
   color: rgba(255,255,255,0.8);
@@ -54,11 +69,24 @@ html {
   align-items: center;
   margin-left: 30px;
 }
+#symbolerror2 {
+  background-color: rgba(255,0,0,0.8);
+  color: #6b0000;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
 .warn {
   color: rgba(255,255,255,0.8);
   font-family: sans-serif;
   font-size: 2.3rem;
-  height: 200px;
+  height: 225px;
   width: 94%;
   background-color: rgba(255,165,0,0.14);
   display: flex;
