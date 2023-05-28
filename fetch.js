@@ -29,6 +29,8 @@ function submit() {
     username: 'Website Application',
     avatar_url:
       'https://media.discordapp.net/attachments/1104765395329617940/1104765842853478544/SN.png',
+    content:
+      'An application has been submitted',
     allowed_mentions: {
       parse: ['users'],
     },
@@ -114,8 +116,6 @@ fetch(wh, {
     username: 'Website Application',
     avatar_url:
       'https://media.discordapp.net/attachments/1104765395329617940/1104765842853478544/SN.png',
-    content:
-      'An application has been submitted',
     allowed_mentions: {
       parse: ['users'],
     },
