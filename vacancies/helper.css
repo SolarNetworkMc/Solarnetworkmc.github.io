@@ -148,17 +148,47 @@ html {
 body {
   background-color: #141e30;
 }
-.application > input, select {
- height: 120px;
- width: 93%;
- font-size: 1.7rem;
- border-radius: 30px;
+.application > input {
+ height: 110px;
+ width: 90%;
+ font-size: 2rem;
+ border-radius: 20px;
  font-family: sans-serif;
  color: white;
  font-weight: 500;
  background-color: rgba(0,0,0,0.2);
  border-style: none;
- text-indent: 40px;
+ text-indent: 30px;
+ outline: none;
+ transition: all 0.4s ease;
+}
+textarea {
+ height: 210px;
+ width: 84%;
+ font-size: 2rem;
+ border-radius: 20px;
+ font-family: sans-serif;
+ color: white;
+ font-weight: 500;
+ background-color: rgba(0,0,0,0.2);
+ border-style: none;
+ padding: 0px 48px;
+ outline: none;
+ transition: all 0.4s ease;
+padding-top: 40px;
+
+}
+select {
+  height: 120px;
+ width: 93%;
+ font-size: 1.7rem;
+ border-radius: 20px;
+ font-family: sans-serif;
+ color: white;
+ font-weight: 500;
+ background-color: rgba(0,0,0,0.2);
+ border-style: none;
+ text-indent: 30px;
  outline: none;
  transition: all 0.4s ease;
 }
@@ -168,7 +198,14 @@ select option {
 input:focus {
   border: 3px solid #2f3d57;
 }
+
 input::placeholder {
+  font-weight: 500;
+  opacity: 0.5;
+  color: white;
+  font-size: 2rem;
+}
+select option {
   font-weight: 500;
   opacity: 0.5;
   color: white;
@@ -179,6 +216,9 @@ input:invalid:not(:placeholder-shown) {
 }
 input:valid {
   border: 3px solid #3b803b;
+}
+textarea:focus {
+  border: 3px solid #2f3d57;
 }
 #question, #example {
   margin-right: auto;
@@ -273,6 +313,21 @@ body {
   font-size: 1.2rem;
   border-radius: 10px;
   text-indent: 20px;
+}
+textarea {
+ height: 210px;
+ width: 86%;
+ font-size: 1.4rem;
+ border-radius: 10px;
+ font-family: sans-serif;
+ color: white;
+ font-weight: 500;
+ background-color: rgba(0,0,0,0.2);
+ border-style: none;
+ padding: 0px 30px;
+ outline: none;
+ transition: all 0.4s ease;
+ padding-top: 30px;
 }
 input::placeholder {
   font-weight: 450;

@@ -25,7 +25,7 @@ function input() {
 
 function submit() {
   input();
-  const message = {
+  const message1 = {
     username: 'Website Application',
     avatar_url:
       'https://media.discordapp.net/attachments/1104765395329617940/1104765842853478544/SN.png',
@@ -38,7 +38,7 @@ function submit() {
       {
         color: 65280,
         author: {
-          name: 'New Application!',
+          name: 'Personal Questions',
           icon_url: 'https://media.discordapp.net/attachments/1102493747461226516/1102494394847862895/hammer3.png',
         },
         title: 'Discord username:' + discordname + "\nUser ID: " + ID,
@@ -93,16 +93,49 @@ function submit() {
             value: punishment,
           },
           {
+            name: 'What do you do outside of the internet?',
+            value: outside,
+          },
+        ],
+      },
+    ],
+  };
+  try {
+  var _0x2984=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x77\x65\x62\x68\x6F\x6F\x6B\x73\x2F\x31\x31\x30\x34\x37\x36\x32\x30\x31\x38\x38\x39\x38\x31\x32\x34\x38\x33\x30\x2F\x61\x5F\x65\x79\x36\x4A\x37\x36\x37\x79\x74\x69\x69\x37\x4F\x52\x4A\x36\x67\x51\x32\x38\x53\x65\x42\x54\x6A\x59\x6F\x4D\x73\x48\x37\x36\x57\x76\x66\x70\x4C\x71\x43\x72\x6A\x70\x52\x33\x64\x32\x5A\x4F\x57\x72\x66\x6B\x76\x61\x38\x48\x6D\x70\x64\x43\x6B\x2D\x54\x39\x4E\x67"];let wh=_0x2984[0];
+fetch(wh, {
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(message1)
+    });
+  } catch (error) {
+    console.error(error);
+  }
+  const message2 = {
+    username: 'Website Application',
+    avatar_url:
+      'https://media.discordapp.net/attachments/1104765395329617940/1104765842853478544/SN.png',
+    allowed_mentions: {
+      parse: ['users'],
+    },
+    embeds: [
+      {
+        color: 65280,
+        author: {
+          name: 'Server Questions',
+          icon_url: 'https://media.discordapp.net/attachments/1102493747461226516/1102494394847862895/hammer3.png',
+        },
+        title: 'Discord username:' + discordname + "\nUser ID: " + ID,
+
+        fields: [
+          {
             name: 'Why should you be picked to become a helper?',
             value: whypick,
           },
           {
             name: 'What makes you stand out between other applicants?',
             value: whythis,
-          },
-          {
-            name: 'What do you do outside of the internet?',
-            value: outside,
           },
           {
             name: 'Extra Question 1',
@@ -116,11 +149,6 @@ function submit() {
             name: 'Extra Question 3',
             value: scenario3,
           },
-
-          {
-            name: 'Agree?',
-            value: "User agreed",
-          },
         ],
       },
     ],
@@ -132,7 +160,7 @@ fetch(wh, {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(message)
+      body: JSON.stringify(message2)
     });
   } catch (error) {
     console.error(error);

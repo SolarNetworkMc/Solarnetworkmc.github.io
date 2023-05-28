@@ -27,6 +27,22 @@ document.querySelectorAll('input').forEach(function(input) {
       localStorage.setItem(inputId, this.value);
       });
     });
+const textareas = document.querySelectorAll('textarea');
+textareas.forEach(textarea => {
+  textarea.addEventListener('input', event => {
+window.addEventListener("beforeunload", function(event) { event.preventDefault() })
+  });
+});
+document.querySelectorAll('textarea').forEach(function(textarea) {
+      var textareaId = textarea.id;
+  var savedTextarea = localStorage.getItem(textareaId);
+  if (savedTextarea) {
+    textarea.value = savedTextarea;
+  }
+  textarea.addEventListener('input', function() {
+    localStorage.setItem(textareaId, this.value);
+  });
+});
 document.getElementById('yes').addEventListener('change', function() {
   if (this.checked) {   document.querySelector('.checkbox').classList.add('checked');
   } else {
