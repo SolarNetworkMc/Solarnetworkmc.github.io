@@ -1,5 +1,6 @@
 
 function input() {
+  submitbtn = document.getElementById('submitbtn');
   email = document.getElementById('email').value;
   discordname = document.getElementById('discordname').value;
   gender = document.getElementById('gender').value;
@@ -167,6 +168,7 @@ fetch(wh, {
   }
 document.querySelector('.success').classList.add('on');
 window.scrollTo(0, 0);
+  submitbtn.value = "false";
 }
 function cleardata() {
 input();
