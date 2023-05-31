@@ -226,7 +226,7 @@ textarea:focus {
   font-family: sans-serif;
   margin-left: 35px;
 }
-.checkbox {
+.checkbox, .checkbox2 {
   font-size: 2rem;
 justify-content: center;
 color: rgba(255,255,255,0.8);
@@ -242,7 +242,7 @@ color: rgba(255,255,255,0.8);
   align-items: center;
   transition: 0.4s ease; 
 }
-.checkbox input {
+.checkbox input, .checkbox2 input {
   width: 80px;
   height: 80px;
   margin-left: 30px;
@@ -283,17 +283,24 @@ button:hover {
   background-color: #1b2840;
  border: 3px solid #33425e;
 }
-.checkbox.in {
+.checkbox.in, .checkbox2.in {
   background-color: rgba(255,0,0,0.05);
   border: 3px solid rgba(255,0,0,0.4);
 }
-.checkbox.checked {
+.checkbox.checked, .checkbox2.checked {
   background-color: rgba(0,255,0,0.05);
   border: 3px solid rgba(0,255,0,0.4);
 }
-.checkbox.checked > input {
+.checkbox.checked > input, .checkbox2.checked > input  {
   accent-color: rgba(0,255,0,0.05);
   opacity: 1;
+}
+.checkbox2 {
+  margin-top: 40px;
+  
+}
+.agreement {
+  gap: 30px;
 }
 #nice {
   display: none;

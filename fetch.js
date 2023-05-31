@@ -21,7 +21,8 @@ function input() {
   scenario1 = document.getElementById('scenario1').value;
   scenario2 = document.getElementById('scenario2').value;
   scenario3 = document.getElementById('scenario3').value;
-  yes = document.getElementById('yes')
+  yes = document.getElementById('yes');
+  yes2 = document.getElementById('yes2');
 }
 
 function submit() {

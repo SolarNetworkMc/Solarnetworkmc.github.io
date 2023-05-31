@@ -7,12 +7,14 @@ if (submitbtn.value === "false") {
 if (email === "" || discordname === "" || ID === "" || gender === "" || nation === "" || countryin === "" || timezone === "" || age === "" || level === "" || online === "" || rank === "" || fluent === "" || workinother === "" || punishment === "" || whypick === "" || whythis === "" || outside === "" || scenario1 === "" || scenario2 === "" || scenario3 === "") {
 document.querySelector('.error').classList.add('on');
   window.scrollTo(0, 0);
-} else if (yes.checked) {
+} else if (!yes.checked) {
+document.querySelector('.checkbox').classList.toggle('in')
+} else if (!yes2.checked) {
+document.querySelector('.checkbox2').classList.toggle('in')
+} else {
 document.querySelector('.error').classList.remove('on');
   submit()
   window.scrollTo(0, 0);
-} else {
-document.querySelector('.checkbox').classList.toggle('in')
 }
 }
 const inputs = document.querySelectorAll('input');
@@ -51,6 +53,12 @@ document.getElementById('yes').addEventListener('change', function() {
   if (this.checked) {   document.querySelector('.checkbox').classList.add('checked');
   } else {
 document.querySelector('.checkbox').classList.remove('checked');
+  }
+});
+document.getElementById('yes2').addEventListener('change', function() {
+  if (this.checked) {   document.querySelector('.checkbox2').classList.add('checked');
+  } else {
+document.querySelector('.checkbox2').classList.remove('checked');
   }
 });
 function ayo() {
