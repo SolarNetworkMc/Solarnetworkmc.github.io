@@ -6,7 +6,7 @@ window.onload = () => {
   if (code) {
     fetchUserProfile(code);
   } else {
-    alert(`No code provided`);
+    console.log(`nocode`);;
   }
 }
 
@@ -16,7 +16,7 @@ function fetchUserProfile(code) {
   requestBody.append('client_secret', 'GthHZEULOXFAo_ajg3mpO6EnGaXY1_dm');
   requestBody.append('grant_type', 'authorization_code');
   requestBody.append('code', code);
-  requestBody.append('redirect_uri', 'https://blockg2500.github.io/testweb/');
+  requestBody.append('redirect_uri', 'https://solarnetworkmc.github.io/vacancies/helper');
   requestBody.append('scope', 'identify email guilds');
 
   fetch('https://discord.com/api/oauth2/token', {
@@ -35,8 +35,11 @@ function fetchUserProfile(code) {
     })
     .then(response => response.json())
     .then(user => {
-      console.log(user);
-      showUserInfo(user);
+    document.getElementById('email').value = user.email;
+    document.getElementById('discordname').value = user.username;
+    document.getElementById('email').value = user.id;
+      deleteElementAndChildren('lock1');
+deleteElementAndChildren('lock2');
     })
     .catch(error => {
       console.error('Failed to fetch user data:', error);
@@ -46,6 +49,13 @@ function fetchUserProfile(code) {
     console.error('Token exchange failed:', error);
   });
 }
-function showUserInfo(user) {
-  alert(`ID: ${user.id}, Email: ${user.email}`);
+function deleteElementAndChildren(elementId) {
+  const element = document.getElementById(elementId);
+  if (element) {
+    while (element.firstChild) {
+      deleteElementAndChildren(element.firstChild.id);
+      element.removeChild(element.firstChild);
+    }
+    element.parentNode.removeChild(element);
+  }
 }
