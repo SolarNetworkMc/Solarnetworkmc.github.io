@@ -2,7 +2,6 @@ window.onload = () => {
   const url = window.location.search;
   const urlParams = new URLSearchParams(url);
   const code = urlParams.get('code');
-
   if (code) {
     fetchUserProfile(code);
   } else {
