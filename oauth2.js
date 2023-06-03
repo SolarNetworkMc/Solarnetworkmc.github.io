@@ -37,7 +37,7 @@ function fetchUserProfile(code) {
     document.getElementById('email').value = user.email;
 document.getElementById('discordname').value = `${user.username}#${user.discriminator}`;
     document.getElementById('ID').value = user.id;
-      document.getElementById('line').classList.add("linegone");     document.getElementById('lockk').classList.add("fade");
+      document.querySelector('.line').classList.add("linegone");     document.querySelector('.lockk').classList.add("fade");
   setTimeout(() => {
       deleteElementAndChildren('lock1');
       deleteElementAndChildren('lock2'); 
