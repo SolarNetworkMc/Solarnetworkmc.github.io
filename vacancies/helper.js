@@ -60,13 +60,4 @@ document.getElementById('yes2').addEventListener('change', function() {
   } else {
 document.querySelector('.checkbox2').classList.remove('checked');
   }
-});
-function ayo() {
-  let sus = document.querySelector('sus')
-if (discordname.value === "Goku3508 iOS#1511") {
-  sus.style.opacity = 1;
-} else {
-  sus.style.opacity = 0;
-}
-}
-setInterval(ayo, 100);
+})

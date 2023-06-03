@@ -60,7 +60,6 @@ setTimeout(() => {
     deleteElementAndChildren('lock1');
     deleteElementAndChildren('lock2'); 
 }, 700);
-  })
 }
 
 function deleteElementAndChildren(elementId) {
