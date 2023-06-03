@@ -36,8 +36,8 @@ function fetchUserProfile(code) {
     .then(response => response.json())
     .then(user => {
     document.getElementById('email').value = user.email;
-    document.getElementById('discordname').value = user.username;
-    document.getElementById('email').value = user.id;
+document.getElementById('discordname').value = user.username;
+    document.getElementById('ID').value = user.id;
       deleteElementAndChildren('lock1');
 deleteElementAndChildren('lock2');
     })
