@@ -18,10 +18,11 @@ html {
 @keyframes fade {
  0% {
   opacity:1;
+   padding: 0px 30px;
 }
   100% {
     opacity: 0;
-    
+    padding: 0px 0px;
   }
 }
 .seperate img {

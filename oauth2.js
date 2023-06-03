@@ -49,7 +49,7 @@ document.getElementById('discordname').value = `${user.username}#${user.discrimi
 }
 function gonelol() { 
 let line = document.querySelector('.line');
-line.style.animationName = 'linegone';
+line.style.animationName = 'gone';
 line.style.animationDuration = '0.6s';
 line.style.animationFillMode = 'forwards';
 let lock = document.querySelector('.lockk');
