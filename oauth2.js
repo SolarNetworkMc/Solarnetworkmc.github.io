@@ -41,7 +41,7 @@ document.getElementById('discordname').value = `${user.username}#${user.discrimi
   setTimeout(() => {
       deleteElementAndChildren('lock1');
       deleteElementAndChildren('lock2'); 
- }, 600);
+ }, 700);
   })
     .catch(error => {
       console.error('Failed to fetch user data:', error);
