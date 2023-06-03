@@ -37,12 +37,7 @@ function fetchUserProfile(code) {
     document.getElementById('email').value = user.email;
 document.getElementById('discordname').value = `${user.username}#${user.discriminator}`;
     document.getElementById('ID').value = user.id;
-      document.querySelector('.line').classList.add("linegone");     document.querySelector('.lockk').classList.add("fade");
-  setTimeout(() => {
-      deleteElementAndChildren('lock1');
-      deleteElementAndChildren('lock2'); 
- }, 700);
-  })
+      gonelol();
     .catch(error => {
       console.error('Failed to fetch user data:', error);
     });
@@ -51,6 +46,22 @@ document.getElementById('discordname').value = `${user.username}#${user.discrimi
     console.error('Token exchange failed:', error);
   });
 }
+function gonelol() { 
+let line = document.querySelector('.line');
+line.style.animationName = 'linegone';
+line.style.animationDuration = '0.6s';
+line.style.animationFillMode = 'forwards';
+let lock = document.querySelector('.lockk');
+lock.style.animationName = 'fade';
+lock.style.animationDuration = '0.6s';
+lock.style.animationFillMode = 'forwards';
+setTimeout(() => {
+    deleteElementAndChildren('lock1');
+    deleteElementAndChildren('lock2'); 
+}, 700);
+  })
+}
+
 function deleteElementAndChildren(elementId) {
   const element = document.getElementById(elementId);
   if (element) {
