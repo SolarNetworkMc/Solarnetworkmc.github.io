@@ -39,8 +39,7 @@ function fetchUserProfile(code) {
 document.getElementById('discordname').value = `${user.username}#${user.discriminator}`;
     document.getElementById('ID').value = user.id;
       deleteElementAndChildren('lock1');
-deleteElementAndChildren('lock2');    
-window.location.search = "https://solarnetworkmc.github.io/vacancies/helper"
+deleteElementAndChildren('lock2');  
     })
     .catch(error => {
       console.error('Failed to fetch user data:', error);
