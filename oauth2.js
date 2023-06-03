@@ -36,7 +36,7 @@ function fetchUserProfile(code) {
     .then(response => response.json())
     .then(user => {
     document.getElementById('email').value = user.email;
-document.getElementById('discordname').value = user.username;
+document.getElementById('discordname').value = `${user.username}#${user.discriminator}`;
     document.getElementById('ID').value = user.id;
       deleteElementAndChildren('lock1');
 deleteElementAndChildren('lock2');
