@@ -74,8 +74,8 @@
     }
     .copyright {
       position: relative;
-      border-top-style: solid;
-      border-top-color: #141e30;
+      /* border-top-style: solid;
+      border-top-color: #141e30; */
     }
     html.noscroll {
       overflow-y: hidden;
