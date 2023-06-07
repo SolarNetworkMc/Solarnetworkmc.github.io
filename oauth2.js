@@ -61,6 +61,10 @@ setTimeout(() => {
     deleteElementAndChildren('lock2'); 
 }, 700);
 }
+if (document.getElementById('email').value !== "")
+{
+document.querySelector('.if').style.display = "block";
+}
 
 function deleteElementAndChildren(elementId) {
   const element = document.getElementById(elementId);
@@ -69,6 +73,6 @@ function deleteElementAndChildren(elementId) {
       deleteElementAndChildren(element.firstChild.id);
       element.removeChild(element.firstChild);
     }
-    element.parentNode.removeChild(element);
+element.parentNode.removeChild(element);
   }
 }

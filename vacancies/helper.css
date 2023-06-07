@@ -1,6 +1,10 @@
 html {
   overflow: auto;
 }
+.if {
+  display: none;
+  opacity:0.3;
+}
 .seperate {
   width: 96%;
   height: 100px;
