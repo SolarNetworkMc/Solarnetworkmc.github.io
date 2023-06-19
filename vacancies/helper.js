@@ -91,7 +91,7 @@ document.getElementById(idlimit).textContent = limit - input.value.length;
     var isInvalid = true;
      addToInvalidList(input, isInvalid)
    } else {
-     var isInvalid = false;
+     var isInvalid = '';
      addToInvalidList(input, isInvalid)
      input.setCustomValidity('');
    }
