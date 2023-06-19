@@ -70,26 +70,26 @@ whypick = document.getElementById('whypick');
   scenario2 = document.getElementById('scenario2');
   scenario3 = document.getElementById('scenario3');
 whypick.addEventListener('input', function(event) {
-   limit(whypick, 350, 'picking');
+   reachlimit(whypick, 350, 'picking');
 });
 whythis.addEventListener('input', function(event) {
-   limit(whythis, 200, 'ythis');
+   reachlimit(whythis, 200, 'ythis');
 });
 scenario1.addEventListener('input', function(event) {
-   limit(scenario1, 300, 'sone');
+   reachlimit(scenario1, 300, 'sone');
 });
 scenario2.addEventListener('input', function(event) {
-   limit(scenario2, 500, 'stwo');
+   reachlimit(scenario2, 500, 'stwo');
 });
 scenario3.addEventListener('input', function(event) {
-   limit(scenario3, 400, 'sthree');
+   reachlimit(scenario3, 400, 'sthree');
 });
-function limit(input, limit, idlimit) {
+function reachlimit(input, limit, idlimit) {
 document.getElementById(idlimit).textContent = limit - input.value.length;
    if (input.value.length > limit) {
    input.setCustomValidity('Invalid');
     var isInvalid = true;
-    addToInvalidList(input, isInvalid)
+     addToInvalidList(input, isInvalid)
    } else {
      var isInvalid = false;
      addToInvalidList(input, isInvalid)
