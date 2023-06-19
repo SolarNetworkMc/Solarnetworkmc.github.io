@@ -11,7 +11,7 @@ document.querySelector('.error').classList.add('on');
 document.querySelector('.checkbox').classList.toggle('in')
 } else if (!yes2.checked) {
 document.querySelector('.checkbox2').classList.toggle('in') } else {
-  if (invalidList.scenario3 || invalidList.scenario2 || invalidList.scenario1 || invalidList.whypick || invalidList.whythis ) {
+  if (invalidList.scenario3 === true || invalidList.scenario2 === true || invalidList.scenario1 === true || invalidList.whypick === true || invalidList.whythis === true) {
   alert(`Your input has reached its characters limit. Please refresh page. Worry not, your answers are saved ;)`);
     return false;
 } else {
