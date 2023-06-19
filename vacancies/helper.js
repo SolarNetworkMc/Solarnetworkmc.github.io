@@ -94,7 +94,7 @@ document.getElementById(idlimit).textContent = limit - input.value.length;
      input.setCustomValidity('');
    }
   }
-}
+
 var invalidList = {};
 function addToInvalidList(input, invalid) {
   invalidList[input.id] = invalid;
