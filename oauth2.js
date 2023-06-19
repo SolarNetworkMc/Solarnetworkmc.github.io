@@ -41,7 +41,12 @@ document.getElementById('discordname').value = `${user.username}`;
 document.getElementById('discordname').value = `${user.username}#${user.discriminator}`;
       }
     document.getElementById('ID').value = user.id;
-      gonelol();
+      if (user.id) {
+        gonelol();
+      } else {
+    document.getElementById('email').value = ""
+document.getElementById('discordname').value = ""
+      }
     })
     .catch(error => {
       console.error('Failed to fetch user data:', error);

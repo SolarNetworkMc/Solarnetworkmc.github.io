@@ -9,9 +9,6 @@ html {
   height: 100px;
   margin-top: 30px;
 }
-* {
-  transition: 0.5s ease;
-}
 .line {
   background: white;
   width: 100%;
@@ -403,6 +400,27 @@ color: rgba(255,255,255,0.8);
   align-items: center;
 }
 .checkbox input {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  background: transparent;
+}
+.checkbox2 {
+  font-size: 1.6rem;
+justify-content: center;
+color: rgba(255,255,255,0.8);
+  font-family: sans-serif;
+  height: 100px;
+  width: 94%;
+  background-color: rgba(0,0,0,0.14);
+  display: flex;
+  flex-direction: warp;
+  gap: 20px;
+  border: 3px solid rgba(0,0,0,0.3);
+  border-radius: 10px;
+  align-items: center;
+}
+.checkbox2 input {
   width: 40px;
   height: 40px;
   margin-left: 20px;
