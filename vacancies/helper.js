@@ -10,12 +10,14 @@ document.querySelector('.error').classList.add('on');
 } else if (!yes.checked) {
 document.querySelector('.checkbox').classList.toggle('in')
 } else if (!yes2.checked) {
-document.querySelector('.checkbox2').classList.toggle('in') } else if (invalidList.scenario3 || invalidList.scenario2 || invalidList.scenario1 || invalidList.whypick || invalidList.whythis ) {
+document.querySelector('.checkbox2').classList.toggle('in') } else {
+  if (invalidList.scenario3 || invalidList.scenario2 || invalidList.scenario1 || invalidList.whypick || invalidList.whythis ) {
   alert(`Your input has reached its characters limit`);
 } else {
 document.querySelector('.error').classList.remove('on');
   submit()
   window.scrollTo(0, 0);
+}
 }
 }
 const inputs = document.querySelectorAll('input');
