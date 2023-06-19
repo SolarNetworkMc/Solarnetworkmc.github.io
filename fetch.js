@@ -114,6 +114,7 @@ fetch(wh, {
   } catch (error) {
     console.error(error);
   }
+setTimeout(() => {
   const message2 = {
     username: 'Website Application',
     avatar_url:
@@ -167,6 +168,7 @@ fetch(wh, {
   } catch (error) {
     console.error(error);
   }
+  }, 700);
 document.querySelector('.success').classList.add('on');
 window.scrollTo(0, 0);
   submitbtn.value = "false";
