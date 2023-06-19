@@ -10,7 +10,8 @@ document.querySelector('.error').classList.add('on');
 } else if (!yes.checked) {
 document.querySelector('.checkbox').classList.toggle('in')
 } else if (!yes2.checked) {
-document.querySelector('.checkbox2').classList.toggle('in')
+document.querySelector('.checkbox2').classList.toggle('in') } else if (invalidList.scenario3 || invalidList.scenario2 || invalidList.scenario1 || invalidList.whypick || invalidList.whythis ) {
+  alert(`Your input has reached its characters limit`);
 } else {
 document.querySelector('.error').classList.remove('on');
   submit()
@@ -84,8 +85,17 @@ scenario3.addEventListener('input', function(event) {
 function limit(input, limit, idlimit) {
 document.getElementById(idlimit).textContent = limit - input.value.length;
    if (input.value.length > limit) {
-   input.setCustomValidity('Invalid input');
+   input.setCustomValidity('Invalid');
+    var isInvalid = true;
+    addToInvalidList(input, isInvalid)
    } else {
+     var isInvalid = false;
+     addToInvalidList(input, isInvalid)
      input.setCustomValidity('');
    }
+  }
+}
+var invalidList = {};
+function addToInvalidList(input, invalid) {
+  invalidList[input.id] = invalid;
 }
