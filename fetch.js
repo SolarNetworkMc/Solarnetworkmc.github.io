@@ -1,4 +1,3 @@
-
 function input() {
   submitbtn = document.getElementById('submitbtn');
   email = document.getElementById('email').value;

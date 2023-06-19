@@ -1,19 +1,18 @@
 function validinput() {
  input();
-if (submitbtn.value === "false") {
-  alert(`You cant submit this application twice`);
-  return;
-}
+// if (submitbtn.value === "false") {
+//   alert(`You cant submit this application twice`);
+//   return;
+// }
 if (email === "" || discordname === "" || ID === "" || gender === "" || nation === "" || countryin === "" || timezone === "" || age === "" || level === "" || online === "" || rank === "" || fluent === "" || workinother === "" || punishment === "" || whypick === "" || whythis === "" || outside === "" || scenario1 === "" || scenario2 === "" || scenario3 === "") {
 document.querySelector('.error').classList.add('on');
   window.scrollTo(0, 0);
 } else if (!yes.checked) {
-document.querySelector('.checkbox').classList.toggle('in')
+document.querySelector('.checkbox').classList.toggle('in');
 } else if (!yes2.checked) {
-document.querySelector('.checkbox2').classList.toggle('in') } else {
+document.querySelector('.checkbox2').classList.toggle('in'); } else {
   if (invalidList.scenario3 === 'true' || invalidList.scenario2 === 'true' || invalidList.scenario1 === 'true' || invalidList.whypick === 'true' || invalidList.whythis === 'true') {
-  alert(`Your input has reached its characters limit. Please refresh page. Worry not, your answers are saved ;)`);
-    return
+  alert(`Your input has reached its characters limit.`);
 } else {
 document.querySelector('.error').classList.remove('on');
   submit()
@@ -21,7 +20,6 @@ document.querySelector('.error').classList.remove('on');
 }
 }
 }
-input();
 const inputs = document.querySelectorAll('input');
 inputs.forEach(input => {
   input.addEventListener('input', event => {
@@ -29,7 +27,6 @@ window.addEventListener("beforeunload", function(event) { event.preventDefault()
   });
 });
 document.querySelectorAll('input').forEach(function(input) {
-     submitbtn.value = "true";
       var inputId = input.id;
       var savedInput = localStorage.getItem(inputId);
       if (savedInput) {
@@ -46,7 +43,6 @@ window.addEventListener("beforeunload", function(event) { event.preventDefault()
   });
 });
 document.querySelectorAll('textarea').forEach(function(textarea) {
-  submitbtn.value = "true";
       var textareaId = textarea.id;
   var savedTextarea = localStorage.getItem(textareaId);
   if (savedTextarea) {
