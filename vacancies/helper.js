@@ -12,7 +12,7 @@ document.querySelector('.checkbox').classList.toggle('in')
 } else if (!yes2.checked) {
 document.querySelector('.checkbox2').classList.toggle('in') } else {
   if (invalidList.scenario3 || invalidList.scenario2 || invalidList.scenario1 || invalidList.whypick || invalidList.whythis ) {
-  alert(`Your input has reached its characters limit`);
+  alert(`Your input has reached its characters limit. Please refresh page. Worry not, your answers are saved ;)`);
 } else {
 document.querySelector('.error').classList.remove('on');
   submit()
