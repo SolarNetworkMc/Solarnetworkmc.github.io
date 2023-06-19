@@ -27,7 +27,9 @@ inputs.forEach(input => {
 window.addEventListener("beforeunload", function(event) { event.preventDefault() })
   });
 });
+input();
 document.querySelectorAll('input').forEach(function(input) {
+     submitbtn.value = "true"
       var inputId = input.id;
       var savedInput = localStorage.getItem(inputId);
       if (savedInput) {
@@ -44,6 +46,7 @@ window.addEventListener("beforeunload", function(event) { event.preventDefault()
   });
 });
 document.querySelectorAll('textarea').forEach(function(textarea) {
+  submitbtn.value = "true"
       var textareaId = textarea.id;
   var savedTextarea = localStorage.getItem(textareaId);
   if (savedTextarea) {
