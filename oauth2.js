@@ -35,7 +35,11 @@ function fetchUserProfile(code) {
     .then(response => response.json())
     .then(user => {
   document.getElementById('email').value = user.email;
+      if (user.discriminator === "0") {
+document.getElementById('discordname').value = `${user.username}`;
+      } else {
 document.getElementById('discordname').value = `${user.username}#${user.discriminator}`;
+      }
     document.getElementById('ID').value = user.id;
       gonelol();
     })
