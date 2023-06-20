@@ -29,7 +29,7 @@ function submit() {
   const message1 = {
     username: 'Website Application',
     avatar_url:
-      'asset/solarlogo.png',
+      'https://solarnetworkmc.github.io/asset/solarlogo.png',
     content:
       'An application has been submitted',
     allowed_mentions: {
@@ -40,7 +40,7 @@ function submit() {
         color: 65280,
         author: {
           name: 'Personal Questions',
-          icon_url: 'asset/hmer.png',
+          icon_url: 'https://solarnetworkmc.github.io/asset/hmer.png',
         },
         title: 'Discord username:' + discordname + "\nUser ID: " + ID,
 
@@ -117,7 +117,7 @@ setTimeout(() => {
   const message2 = {
     username: 'Website Application',
     avatar_url:
-      'asset/solarlogo.png',
+      'https://solarnetworkmc.github.io/asset/solarlogo.png',
     allowed_mentions: {
       parse: ['users'],
     },
@@ -126,7 +126,7 @@ setTimeout(() => {
         color: 65280,
         author: {
           name: 'Server Questions',
-          icon_url: 'asset/hmer.png',
+          icon_url: 'https://solarnetworkmc.github.io/asset/hmer.png',
         },
         title: 'Discord username:' + discordname + "\nUser ID: " + ID,
 
