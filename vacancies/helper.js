@@ -1,23 +1,38 @@
 function validinput() {
  input();
-// if (submitbtn.value === "false") {
-//   alert(`You cant submit this application twice`);
-//   return;
-// }
-if (email === "" || discordname === "" || ID === "" || gender === "" || nation === "" || countryin === "" || timezone === "" || age === "" || level === "" || online === "" || rank === "" || fluent === "" || workinother === "" || punishment === "" || whypick === "" || whythis === "" || outside === "" || scenario1 === "" || scenario2 === "" || scenario3 === "") {
-document.querySelector('.error').classList.add('on');
+if (submitbtn.value === "false") {
+  alert(`You can't submit this application twice`);
+} else if (
+  email === "" ||
+  discordname === "" ||
+  ID === "" ||
+  gender === "" ||
+  nation === "" ||
+  countryin === "" ||
+  timezone === "" ||
+  age === "" ||
+  level === "" ||
+  online === "" ||
+  rank === "" ||
+  fluent === "" ||
+  workinother === "" ||
+  punishment === "" ||
+  whypick === "" ||
+  whythis === "" ||
+  outside === "" ||
+  scenario1 === "" ||
+  scenario2 === "" ||
+  scenario3 === ""
+) {  document.querySelector('.error').classList.add('on');
   window.scrollTo(0, 0);
 } else if (!yes.checked) {
 document.querySelector('.checkbox').classList.toggle('in');
 } else if (!yes2.checked) {
-document.querySelector('.checkbox2').classList.toggle('in'); } else {
-  if (invalid.scenario3 || invalid.scenario2 || invalid.scenario1 || invalid.whypick || invalid.whythis ) {
-  alert(`Your input has reached its characters limit.`);
+document.querySelector('.checkbox2').classList.toggle('in');
 } else {
 document.querySelector('.error').classList.remove('on');
-  submit()
+  submit();
   window.scrollTo(0, 0);
-}
 }
 }
 const inputs = document.querySelectorAll('input');
@@ -84,14 +99,12 @@ scenario2.addEventListener('input', function(event) {
 scenario3.addEventListener('input', function(event) {
    reachlimit(scenario3, 400, 'sthree');
 });
-const invalid = {};
 function reachlimit(input, limit, idlimit) {
 document.getElementById(idlimit).textContent = limit - input.value.length;
    if (input.value.length > limit) {
-   input.setCustomValidity('Invalid');
-    invalid[input.id] = true
+    input.value = input.value.slice(0, limit);
+     input.setCustomValidity('invalid');
    } else {
      input.setCustomValidity('');
-     delete invalid[input.id]
    }
   }
