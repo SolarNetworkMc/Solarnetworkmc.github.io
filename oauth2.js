@@ -60,7 +60,7 @@ document.getElementById('discordname').value = ""
         if (!isMember) {
           alert(`You must be in SolarNetwork Discord server to apply this position`);        document.getElementById('email').value = ""
 document.getElementById('discordname').value = ""
-document.getElementById('discordname').value = ""
+document.getElementById('ID').value = ""
         }
       })
       .catch(error => {
