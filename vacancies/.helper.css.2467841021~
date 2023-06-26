@@ -1,25 +1,12 @@
 html {
   overflow: auto;
 }
-/* {
-  outline: 2px solid red;
-} */
 .if {
   opacity:0.3;
 }
 .hidelimit {
-  color: #ffab01;
-  font-family: sans-serif;
-  font-size: 2rem;
-  text-align: left;
-  font-weight: 400;
-  margin-right: auto;
-  margin-left: 35px;
-  opacity: 0.7;
-  display: none;
-}
-.hidelimit.active {
-  display: block;
+  color: yellow;
+  
 }
 .seperate {
   width: 96%;
@@ -287,18 +274,15 @@ select option {
 }
 input:invalid:not(:placeholder-shown) {
   border: 3px solid #750000;
-  box-shadow: 0px 0px 10px #750000;
 }
 textarea:invalid:not(:placeholder-shown) {
   border: 3px solid #750000;
-  box-shadow: 0px 0px 10px #750000;
 }
-/* input:valid {
+input:valid {
   border: 3px solid #3b803b;
-} */
-textarea.min {
-  border: 3px solid #bf9200;
-  box-shadow: 0px 0px 10px #bf9200;
+}
+textarea:focus {
+  border: 3px solid #2f3d57;
 }
 #question, #example {
   margin-right: auto;

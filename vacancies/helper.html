@@ -31,7 +31,7 @@
     <input id=email type=email disabled>
     <p id=example class=if onclick="document.getElementById('email').removeAttribute('disabled')">Different email?</p>
     <p id=question>2. Discord username</p>
-    <input type=text id=discordname disabled />
+    <input type=text id=discordname disabled/>
     <p id=question>3. Discord user ID</p>
     <input type=number id=ID disabled />
     <div id=lock1 style="position:relative;width:100%;"><a href="https://discord.com/api/oauth2/authorize?client_id=1095020466852348024&redirect_uri=https%3A%2F%2Fsolarnetworkmc.github.io%2Fvacancies%2Fhelper&response_type=code&scope=identify%20email%20guilds"><p style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.5rem; color:white;font-family:sans-serif;font-weight:700;opacity:0.5"><u>Login with oauth2</u></p></a></div>
@@ -46,11 +46,11 @@
     <p id=question>5. What country do you live in?</p>
     <input id="nation" type=text placeholder="The country you currently live in" required />
     <p id=example>The country you're living on at the time you're applying</p>
-    <p id=question>6. What country are you from? </p>
+    <p id=question>6. What country are you from?</p>
     <input id="countryin" type=text placeholder="Where you came from" required/>
     <p id=example>Your nationality</p>
     <p id=question>7. What timezone do you live in?</p>
-    <input id="timezone" type=text placeholder="Your timezone" required />
+    <input id="timezone" type=text placeholder="Your timezone" required/>
     <p id=example>The timezone that you live in</p>
     <p id=question>8. How old are you?</p>
     <input id="age" type=number min=13 placeholder="Your age" required />
@@ -79,18 +79,23 @@
     <p id=question>16. Why should you be picked to become a helper? </p>
     <div class=quest><textarea id="whypick" type=text placeholder="Why should we pick you?" required></textarea>
     <p class=charlimit id=picking></p></div>
+    <p id=yp class=hidelimit></p>
     <p id=example>Please take your time with this question.</p>
         <p id=question>17. What makes you stand out between other applicants? </p>
     <div class=quest><textarea id="whythis" type=text placeholder="What makes you special between other applicants?" required></textarea><p class=charlimit id=ythis></p></div>
+     <p id=yt class=hidelimit></p>
     <p id=example>You can talk about your talents</p>
         <p id=question>18. Extra knowledge 1 </p>
     <div class=quest><textarea id="scenario1" rows=3 type=text placeholder="What would you do?" required></textarea><p class=charlimit id=sone></p></div>
+    <p id=so class=hidelimit></p>
     <p id=example>You just punished a well-known player and everyone starts to ask you to remove their punishments or they will ask an admin to dismiss you.</p>
             <p id=question>19. Extra knowledge 2 </p>
     <div class=quest><textarea id="scenario2" type=text placeholder="What would you do?" required></textarea><p class=charlimit id=stwo></p></div>
+     <p id=st class=hidelimit></p>
     <p id=example>You're in a lobby and you get notified that 3 people are breaking the rules, The 1st one's hacking, 2nd is verball abusing people and 3rd is abusing bugs.</p>
                 <p id=question>20. Extra knowledge 3 </p>
     <div class=quest><textarea id="scenario3" type=text placeholder="What would you do?" required></textarea><p class=charlimit id=sthree></p></div>
+     <p id=sth class=hidelimit></p>
     <p id=example>A member adds you as a friend in discord and starts begging for ranks.</p>
     <p id=question>Submittion </p>
     <div class=checkbox>
@@ -113,6 +118,10 @@
   </script>
   <script src="../fetch.js">
   </script>
+   <div class=copyright>
+    <p>© 2023 Solar Network. All rights reserved</p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 <!-- all requirements and end -->

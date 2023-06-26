@@ -1,5 +1,16 @@
 function validinput() {
  input();
+  var confirmed = confirm('Sending application confirmation');
+      if (!confirmed) {
+        return
+      }
+  if (email === "") {
+    if (savedemail) {
+    document.getElementById('email').value = savedemail
+    alert("Your email has been replaced from oauth2\nReason: Empty");
+    return
+    }
+  }
 if (submitbtn.value === "false") {
   alert(`You can't submit this application twice`);
 } else if (

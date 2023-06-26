@@ -170,6 +170,7 @@ fetch(wh, {
   }, 700);
 document.querySelector('.success').classList.add('on');
 window.scrollTo(0, 0);
+  cleardata()
   submitbtn.value = "false";
 }
 function cleardata() {

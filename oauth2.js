@@ -8,7 +8,7 @@ window.onload = () => {
     console.log(`nocode`);;
   }
 }
-
+let savedemail;
 function fetchUserProfile(code) {
   const requestBody = new URLSearchParams();
   requestBody.append('client_id', '1095020466852348024');
@@ -41,6 +41,7 @@ document.getElementById('discordname').value = `${user.username}`;
 document.getElementById('discordname').value = `${user.username}#${user.discriminator}`;
       }
     document.getElementById('ID').value = user.id;
+      savedemail = user.email
       if (user.id) {
         gonelol();
       } else {
