@@ -1,83 +1,51 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="css/applytoall.css">
-  <link rel="stylesheet" href="css/gm.css">
-  <link rel="stylesheet" href="css/discover.css">
-  <link rel="stylesheet" href="css/vacancies.css">
-  <link rel="stylesheet" href="css/UI.css">
-  <link rel="stylesheet" href="css/UI2.css">
-  <link rel="stylesheet" href="css/navbar.css">
   <meta charset="UTF-8">
-  <div class=overlay></div>
-  <div class="solar">
-    <img class="logo" id="logobig" src="asset/solarlogo.png" width=235 height=100>
-  </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solarnetwork</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="js/script.js"></script>
 </head>
-
 <body>
-  <div id="popup" class="ui">
-    <div class="vacanciespopup">
-      <div class="text">
-        <p class="title" id=titleofpopup>Staff Positions</p>
-        <a class="exit" id=back><button onclick="helpapp()" class=back>&lt;</button></a>
-        <a class="exit"><button onclick="closepopup()">X</button></a>
-      </div>
-      <iframe class=help src="vacancies/helper.html"></iframe>
-      <div class="jobs">
-        <div class="a">
-          <p id=context>Select an application</p>
-          <button class="appbtn" onclick=helpapp()><img src="asset/hhammer.png" width=100>
-            <p>Helper</p><img src="asset/arrow.png" width=60>
-          </button>
-        </div>
-      </div>
+  <nav class='navigate'>
+  <div class='width'>
+  <div class='ip' id=ip><p id=animation1>solarnetwork.lol</p><p id=animation2>I</p><p id=animation3>19135</p></div>
+    <ul>
+       <li><a href="">Home</a></li>
+       <li><a href="https://youtu.be/dQw4w9WgXcQ">Store</a></li>
+       <li><a href="vacancies/helper">Apply</a></li>
+       <li><a href="https://discord.com/channels/1051145073389207592/1081108038188015676">About</a></li>
+       <li><a href="https://discord.com/channels/1051145073389207592/1057354534952915064">Support</a></li>
+    </ul>
+   <div class="hamburger" style='font-size:25px;' onclick='menu()' id=rotate >&#9776;</div>
     </div>
+  </nav>
+   <div class='bn'>
+   <div class='sl' id='sl'></div>
   </div>
-  <p id=ten1>Solar Network</p>
-  <p id=description>Solar Network is an upcoming Minecraft server<br>featuring various types of minigames, handle<br> by
-    a welcoming staff team.</p>
-  <div class=discover>
-    <div class=Disbuttons>
-      <a href="/vacancies/helper.html"><button id=vacancies onclick=openpopup()>
-          <div class=center><img class=tags id=buttitle src='asset/tags.png' width=112 height=112>
-            <p id=butten1>Vacancies</p>
-          </div><img id=dark src="asset/lobby1.png" />
-        </button></a>
-      <a href="https://discord.com/invite/solarnet"><button id=discord onclick=opendiscord()>
-          <div class=center><img id=buttitle src="asset/msg.png" width=112 height=112>
-            <p id=butten1>Discord</p>
-          </div><img id=dark src="asset/lobby4.png">
-        </button></a>
-      <a href=https://youtu.be/dQw4w9WgXcQ><button id=Store>
-          <div class=center><img id=buttitle src="asset/store.png" width=112 height=112>
-            <p id=butten1>Store</p>
-          </div><img id=dark src="asset/lobby2.png">
-        </button></a>
-      <a href=https://youtu.be/dQw4w9WgXcQ><button id=Information>
-          <div class=center><img id=buttitle src="asset/book.png" width=112 height=112>
-            <p id=butten1>About</p>
-          </div><img id=dark src="asset/lobby3.png">
-        </button></a>
-    </div>
+     <p class='title'>Welcome to SolarNetwork</p>
+     <p class='context'>Solar Network is an upcoming Minecraft server featuring various types of minigames, handle by a welcoming staff team.</p>
+   <div class=align>
+<button class=dbtn onclick=joindc()>Learn more  &rarr;</button>
+   </div>
+  <div style='position:relative;background: #181818'>
+  <div class="vacancies" onclick="expandVacancy(this, 1)">
+    <p class="title">Staff Application</p>
+    <p class="context">Solarnetwork is always looking for new staff every day! Helper application is open. If you're interested, click for more information.</p>
   </div>
-  <!-- <p id=ten1>Discover</p>
-  <div class=games>
-     <div class=modes>
-      <div class=bedwars>       
-       <img src="bed.png">
-       <div class=intro>
-        <p id=modename>Bedwars</p>
-        <p id=modetext>build around your bed, dont play it at 3am</p>
-       </div>
-      </div>
-     </div>
-  </div> -->
-  <div class=copyright>
-    <p>© 2023 Solar Network. All rights reserved</p>
+  <a href="vacancies/helper" id="arrowdirect1">&rarr;</a>
+</div>
+  <div style='position:relative;background: #222f3e'>
+  <div class="discord-server" onclick="expandVacancy(this, 2)">
+    <p class="title">Our Discord Server</p>
+    <p class="context">Join us in our Discord! Get newest announcement from us, play with others and tons of other things to discover. Click to join! We'd love to see you there.</p>
   </div>
-  <script src="script.js"></script>
-</body>
+  <a href="https://discord.gg/8bBxc7nq" id="arrowdirect2">&rarr;</a>
+</div>
 
+  <div class=ongoing><p>Hang on, Big display is not available yet, please come back to this website using a phone!
+Note: You can access <a href='vacancies/helper.html'>helper Application</a>. You may find UI not perfect.</p>
+  </div>
+</body>
 </html>

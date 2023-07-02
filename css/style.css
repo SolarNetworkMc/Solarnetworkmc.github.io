@@ -1,0 +1,208 @@
+/* all */
+* {
+  font-family: sans-serif;
+  /* outline: 2px solid red; */
+}
+.ip {
+  display: flex;
+  flex-direction: warp;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #202020
+}
+.bn {
+  background-size: cover;
+  background-position: center;
+  background-image: url('../asset/banner.png');
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sl {
+  background-size: cover;
+  background-image: url('../asset/sl.png');
+  background-repeat: no-repeat;
+}
+/* Phone */
+@media only screen and (max-width: 767px) {
+.navigate {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 92%;
+  margin: auto;
+}
+.ip {
+  font-size:14px;
+  gap: 5px;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: warp;
+  position: absolute;
+  gap: 20px;
+  bottom: 30px;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+ul.on {
+  bottom: -2px;
+  opacity: 1;
+}
+.hamburger {
+  margin-bottom: 3px;
+  transition: margin-bottom 0.6s ease;
+}
+.hamburger.on {
+  transition: 0.6s ease;
+  transform: rotate(360deg);
+  margin-bottom: 6px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.bn {
+  height: 239px;
+}
+.sl {
+  width: 180px;
+  height: 70px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+}
+.context {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 350;
+  width: 95%;
+  
+}
+.dbtn {
+  padding: 10px 20px;
+  background-color: #1A74E2;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px #1A74E2;
+  font-size: 12px;
+}
+.dbtn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top left, rgba(54, 57, 62, 0), rgba(54, 57, 62, 1));
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: 9999;
+  visibility: hidden;
+}
+.dbtn.on:before {
+  background: linear-gradient(to top left, rgba(54, 57, 62, 1), rgba(54, 57, 62, 1));
+  opacity: 1;
+  visibility: visible;
+}
+.align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vacancies {
+  background: #151515;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 210px;
+  margin-top: 30px;
+  margin-right: 0px;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+.discord-server {
+  position: relative;
+  background: #4e5d94;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 210px;
+  margin-right: 0px;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+#arrowdirect1, #arrowdirect2 {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  padding: 3px 7.5px;
+  background: #101010;
+  border-radius: 50%;
+  font-size: 20px;
+  border: 2px solid #202020;
+  visibility: hidden;
+  z-index: 1;
+}
+#arrowdirect2 {
+  background: #4e5d94;
+  border: 2px solid #1c2733;
+}
+#animation1, #animation2, #animation3{
+  position: relative;
+  transition: all 0.5s ease;
+  right: 0px;
+}
+#animation1.on, #animation2.on, #animation3.on{
+  right: 200px;
+}
+.ongoing {
+  display: none;
+}
+}
+/*  Monitor */
+@media only screen and (min-width: 768px) {
+  * {
+  overflow: hidden;
+  }
+  .ongoing {
+    position: fixed;
+    top: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+    color: white;
+  }
+}
