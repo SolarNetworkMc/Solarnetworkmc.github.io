@@ -169,7 +169,6 @@ a {
   border-radius: 50%;
   font-size: 20px;
   border: 2px solid #202020;
-  visibility: hidden;
   z-index: 1;
 }
 #arrowdirect2 {

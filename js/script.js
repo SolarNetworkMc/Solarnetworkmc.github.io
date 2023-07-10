@@ -28,16 +28,12 @@ setTimeout(function() {
   document.querySelector('.dbtn').classList.remove('on');
  }, 700);
 }
-function expandVacancy(element, num) {
-  var arrowButton = document.getElementById("arrowdirect" + num);
-  
+function expandVacancy(element) {  
   if (element.classList.contains("expanded")) {
     element.classList.remove("expanded");
     element.style.transform = "translateX(0)";
-    arrowButton.style.visibility = "hidden";
   } else {
     element.classList.add("expanded");
     element.style.transform = "translateX(-50px)";
-    arrowButton.style.visibility = "visible";
   }
 }
